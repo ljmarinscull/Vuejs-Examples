@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>Vue.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </meta>
+</head>
+
+<body>
+    <main>
+        {{ 'hello' | capitalize }}
+        <input type="text" v-model="options">
+        <input type="checkbox" value="option 1" v-model="options" />
+        <input type="checkbox" value="option 2" v-model="options" />
+        <pre>{{ options.join(', ') }}</pre>
+    </main>
+</body>
+<script src="https://unpkg.com/vue@2.2.1/dist/vue.js"></script>
+<script src="main.js"></script>
+</html>
